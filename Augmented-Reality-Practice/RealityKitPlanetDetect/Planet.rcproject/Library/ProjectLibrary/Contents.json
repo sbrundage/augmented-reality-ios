@@ -1,0 +1,32 @@
+[
+  {
+    "libraryIdentifier" : "96f511067462ccf0ad3a54d1b62031c8",
+    "format" : "model",
+    "displayName" : "toy_biplane.usdz"
+  },
+  {
+    "libraryIdentifier" : "c2291c4cdb57a158c3ecaf86b9a8cc3e",
+    "format" : "model",
+    "displayName" : "Earth.usdz"
+  },
+  {
+    "libraryIdentifier" : "22e1620310cb2dca8744fbd98f2bd18b",
+    "format" : "image",
+    "displayName" : "Earth.jpeg"
+  },
+  {
+    "libraryIdentifier" : "d4994284f139a8f1e985feb942167f7b",
+    "format" : "model",
+    "displayName" : "Planet.usdz"
+  },
+  {
+    "libraryIdentifier" : "b1a106b56e4e4d4e07d4007a58c7bbee",
+    "format" : "model",
+    "displayName" : "Sun.usdz"
+  },
+  {
+    "libraryIdentifier" : "a9fc7caf46fd16b04002925ffadc131e",
+    "format" : "image",
+    "displayName" : "Sun.jpeg"
+  }
+]

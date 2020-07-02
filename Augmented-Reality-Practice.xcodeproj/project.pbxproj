@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F5D50AA113CEB501E3749A2 /* Pods_Augmented_Reality_Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C385C31F4ACCD99B36F1481 /* Pods_Augmented_Reality_Practice.framework */; };
+		9E160D802421569C00B341CF /* ScalableObjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E160D7F2421569C00B341CF /* ScalableObjectsViewController.swift */; };
+		9E160D8424217F4600B341CF /* table.dae in Resources */ = {isa = PBXBuildFile; fileRef = 9E160D8324217F4600B341CF /* table.dae */; };
+		9E5A26F8242427F600409343 /* PersistenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5A26F7242427F600409343 /* PersistenceViewController.swift */; };
+		9E6B23E12443559300132910 /* PracticePlaneDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6B23E02443559300132910 /* PracticePlaneDetection.swift */; };
+		9E6B23E324435DEB00132910 /* ARPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6B23E224435DEB00132910 /* ARPlane.swift */; };
+		9E6F487924AE4D5E0038A6B5 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6F487824AE4D5E0038A6B5 /* ARViewController.swift */; };
+		9E6F487B24AE583A0038A6B5 /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 9E6F487A24AE583A0038A6B5 /* toy_drummer.usdz */; };
+		9E7530B623F99E3800B1D6AA /* TargetAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7530B523F99E3800B1D6AA /* TargetAppViewController.swift */; };
+		9E7530BB23FA155800B1D6AA /* MeasurementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7530BA23FA155800B1D6AA /* MeasurementViewController.swift */; };
+		9E9800C423F89AA900648331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9800C323F89AA900648331 /* AppDelegate.swift */; };
+		9E9800C623F89AA900648331 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E9800C523F89AA900648331 /* art.scnassets */; };
+		9E9800C823F89AAA00648331 /* PlaceVirtualObjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9800C723F89AAA00648331 /* PlaceVirtualObjectsViewController.swift */; };
+		9E9800CB23F89AAA00648331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9800C923F89AAA00648331 /* Main.storyboard */; };
+		9E9800CD23F89AAC00648331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E9800CC23F89AAC00648331 /* Assets.xcassets */; };
+		9E9800D023F89AAC00648331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9800CE23F89AAC00648331 /* LaunchScreen.storyboard */; };
+		9E9800D823F8A5D100648331 /* OverlayPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9800D723F8A5D100648331 /* OverlayPlane.swift */; };
+		9EB0BAB9240747D1003693A4 /* haunter.dae in Resources */ = {isa = PBXBuildFile; fileRef = 9EB0BAB8240747D1003693A4 /* haunter.dae */; };
+		9EB0BABB240747EC003693A4 /* GoogleBlocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB0BABA240747EC003693A4 /* GoogleBlocksViewController.swift */; };
+		9EB0BAC1240F35D2003693A4 /* RemoteCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB0BAC0240F35D2003693A4 /* RemoteCarViewController.swift */; };
+		9EB0BAC3240F36F3003693A4 /* car.dae in Resources */ = {isa = PBXBuildFile; fileRef = 9EB0BAC2240F36F3003693A4 /* car.dae */; };
+		9EB0BAE724126EF8003693A4 /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB0BAE624126EF8003693A4 /* GameButton.swift */; };
+		9EB0BAEA24127379003693A4 /* PlaneDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB0BAE924127379003693A4 /* PlaneDetectionViewController.swift */; };
+		9ED11320243665AF0051565D /* PlanetDetectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED1131F243665AF0051565D /* PlanetDetectViewController.swift */; };
+		9ED11322243666C60051565D /* Planet.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 9ED11321243666C60051565D /* Planet.rcproject */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C2CE687D5041077CD36A0F3 /* Pods-Augmented-Reality-Practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Augmented-Reality-Practice.release.xcconfig"; path = "Target Support Files/Pods-Augmented-Reality-Practice/Pods-Augmented-Reality-Practice.release.xcconfig"; sourceTree = "<group>"; };
+		3C385C31F4ACCD99B36F1481 /* Pods_Augmented_Reality_Practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Augmented_Reality_Practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E160D7F2421569C00B341CF /* ScalableObjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalableObjectsViewController.swift; sourceTree = "<group>"; };
+		9E160D8324217F4600B341CF /* table.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = table.dae; sourceTree = "<group>"; };
+		9E5A26F7242427F600409343 /* PersistenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceViewController.swift; sourceTree = "<group>"; };
+		9E6B23E02443559300132910 /* PracticePlaneDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticePlaneDetection.swift; sourceTree = "<group>"; };
+		9E6B23E224435DEB00132910 /* ARPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPlane.swift; sourceTree = "<group>"; };
+		9E6F487824AE4D5E0038A6B5 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		9E6F487A24AE583A0038A6B5 /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer.usdz; sourceTree = "<group>"; };
+		9E7530B523F99E3800B1D6AA /* TargetAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetAppViewController.swift; sourceTree = "<group>"; };
+		9E7530BA23FA155800B1D6AA /* MeasurementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementViewController.swift; sourceTree = "<group>"; };
+		9E9800C023F89AA900648331 /* Augmented-Reality-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Augmented-Reality-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E9800C323F89AA900648331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9E9800C523F89AA900648331 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		9E9800C723F89AAA00648331 /* PlaceVirtualObjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceVirtualObjectsViewController.swift; sourceTree = "<group>"; };
+		9E9800CA23F89AAA00648331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E9800CC23F89AAC00648331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E9800CF23F89AAC00648331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E9800D123F89AAC00648331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E9800D723F8A5D100648331 /* OverlayPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPlane.swift; sourceTree = "<group>"; };
+		9EB0BAB8240747D1003693A4 /* haunter.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = haunter.dae; sourceTree = "<group>"; };
+		9EB0BABA240747EC003693A4 /* GoogleBlocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleBlocksViewController.swift; sourceTree = "<group>"; };
+		9EB0BAC0240F35D2003693A4 /* RemoteCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCarViewController.swift; sourceTree = "<group>"; };
+		9EB0BAC2240F36F3003693A4 /* car.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = car.dae; sourceTree = "<group>"; };
+		9EB0BAE624126EF8003693A4 /* GameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
+		9EB0BAE924127379003693A4 /* PlaneDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneDetectionViewController.swift; sourceTree = "<group>"; };
+		9ED1131F243665AF0051565D /* PlanetDetectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetectViewController.swift; sourceTree = "<group>"; };
+		9ED11321243666C60051565D /* Planet.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Planet.rcproject; sourceTree = "<group>"; };
+		A38584FA092EC2135F713569 /* Pods-Augmented-Reality-Practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Augmented-Reality-Practice.debug.xcconfig"; path = "Target Support Files/Pods-Augmented-Reality-Practice/Pods-Augmented-Reality-Practice.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E9800BD23F89AA900648331 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F5D50AA113CEB501E3749A2 /* Pods_Augmented_Reality_Practice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E160D7E2421566E00B341CF /* ScalableObjects */ = {
+			isa = PBXGroup;
+			children = (
+				9E160D7F2421569C00B341CF /* ScalableObjectsViewController.swift */,
+				9E160D8324217F4600B341CF /* table.dae */,
+			);
+			path = ScalableObjects;
+			sourceTree = "<group>";
+		};
+		9E5A26F6242427DB00409343 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				9E5A26F7242427F600409343 /* PersistenceViewController.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		9E6F487724AE4CED0038A6B5 /* UsingModelEntities */ = {
+			isa = PBXGroup;
+			children = (
+				9E6F487824AE4D5E0038A6B5 /* ARViewController.swift */,
+				9E6F487A24AE583A0038A6B5 /* toy_drummer.usdz */,
+			);
+			path = UsingModelEntities;
+			sourceTree = "<group>";
+		};
+		9E7530B723FA150800B1D6AA /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				9E7530B523F99E3800B1D6AA /* TargetAppViewController.swift */,
+			);
+			path = TargetApp;
+			sourceTree = "<group>";
+		};
+		9E7530B823FA151D00B1D6AA /* PlaceVirtualObjectsOnPlanes */ = {
+			isa = PBXGroup;
+			children = (
+				9E9800C723F89AAA00648331 /* PlaceVirtualObjectsViewController.swift */,
+			);
+			path = PlaceVirtualObjectsOnPlanes;
+			sourceTree = "<group>";
+		};
+		9E7530B923FA153200B1D6AA /* MeasurementApp */ = {
+			isa = PBXGroup;
+			children = (
+				9E7530BA23FA155800B1D6AA /* MeasurementViewController.swift */,
+			);
+			path = MeasurementApp;
+			sourceTree = "<group>";
+		};
+		9E9800B723F89AA900648331 = {
+			isa = PBXGroup;
+			children = (
+				9E9800C223F89AA900648331 /* Augmented-Reality-Practice */,
+				9E9800C123F89AA900648331 /* Products */,
+				B95B67E4C6C9E048AE20707C /* Pods */,
+				C7A0680641243CD54EEF0C63 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9E9800C123F89AA900648331 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E9800C023F89AA900648331 /* Augmented-Reality-Practice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E9800C223F89AA900648331 /* Augmented-Reality-Practice */ = {
+			isa = PBXGroup;
+			children = (
+				9E6F487724AE4CED0038A6B5 /* UsingModelEntities */,
+				9EB0BAE824127360003693A4 /* Planes */,
+				9EB0BABF240F3325003693A4 /* RemoteCar */,
+				9EB0BAB7240742DE003693A4 /* GoogleBlocks */,
+				9E7530B823FA151D00B1D6AA /* PlaceVirtualObjectsOnPlanes */,
+				9E7530B723FA150800B1D6AA /* TargetApp */,
+				9E7530B923FA153200B1D6AA /* MeasurementApp */,
+				9E160D7E2421566E00B341CF /* ScalableObjects */,
+				9E5A26F6242427DB00409343 /* Persistence */,
+				9ED1131E2436656C0051565D /* RealityKitPlanetDetect */,
+				9EFBDE5D24421BFA00BAE6E1 /* Practice */,
+				9E9800C323F89AA900648331 /* AppDelegate.swift */,
+				9E9800C923F89AAA00648331 /* Main.storyboard */,
+				9E9800CE23F89AAC00648331 /* LaunchScreen.storyboard */,
+				9E9800C523F89AA900648331 /* art.scnassets */,
+				9E9800CC23F89AAC00648331 /* Assets.xcassets */,
+				9E9800D123F89AAC00648331 /* Info.plist */,
+			);
+			path = "Augmented-Reality-Practice";
+			sourceTree = "<group>";
+		};
+		9EB0BAB7240742DE003693A4 /* GoogleBlocks */ = {
+			isa = PBXGroup;
+			children = (
+				9EB0BABA240747EC003693A4 /* GoogleBlocksViewController.swift */,
+				9EB0BAB8240747D1003693A4 /* haunter.dae */,
+			);
+			path = GoogleBlocks;
+			sourceTree = "<group>";
+		};
+		9EB0BABF240F3325003693A4 /* RemoteCar */ = {
+			isa = PBXGroup;
+			children = (
+				9EB0BAC0240F35D2003693A4 /* RemoteCarViewController.swift */,
+				9EB0BAE624126EF8003693A4 /* GameButton.swift */,
+				9EB0BAC2240F36F3003693A4 /* car.dae */,
+			);
+			path = RemoteCar;
+			sourceTree = "<group>";
+		};
+		9EB0BAE824127360003693A4 /* Planes */ = {
+			isa = PBXGroup;
+			children = (
+				9EB0BAE924127379003693A4 /* PlaneDetectionViewController.swift */,
+				9E9800D723F8A5D100648331 /* OverlayPlane.swift */,
+			);
+			path = Planes;
+			sourceTree = "<group>";
+		};
+		9ED1131E2436656C0051565D /* RealityKitPlanetDetect */ = {
+			isa = PBXGroup;
+			children = (
+				9ED1131F243665AF0051565D /* PlanetDetectViewController.swift */,
+				9ED11321243666C60051565D /* Planet.rcproject */,
+			);
+			path = RealityKitPlanetDetect;
+			sourceTree = "<group>";
+		};
+		9EFBDE5D24421BFA00BAE6E1 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				9E6B23E02443559300132910 /* PracticePlaneDetection.swift */,
+				9E6B23E224435DEB00132910 /* ARPlane.swift */,
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
+		B95B67E4C6C9E048AE20707C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A38584FA092EC2135F713569 /* Pods-Augmented-Reality-Practice.debug.xcconfig */,
+				3C2CE687D5041077CD36A0F3 /* Pods-Augmented-Reality-Practice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C7A0680641243CD54EEF0C63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C385C31F4ACCD99B36F1481 /* Pods_Augmented_Reality_Practice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E9800BF23F89AA900648331 /* Augmented-Reality-Practice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E9800D423F89AAC00648331 /* Build configuration list for PBXNativeTarget "Augmented-Reality-Practice" */;
+			buildPhases = (
+				F033BC379828C6BDFF45F934 /* [CP] Check Pods Manifest.lock */,
+				9E9800BC23F89AA900648331 /* Sources */,
+				9E9800BD23F89AA900648331 /* Frameworks */,
+				9E9800BE23F89AA900648331 /* Resources */,
+				705D7AA554B0E5903AE334CF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Augmented-Reality-Practice";
+			productName = "Augmented-Reality-Practice";
+			productReference = 9E9800C023F89AA900648331 /* Augmented-Reality-Practice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E9800B823F89AA900648331 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Stephen Brundage";
+				TargetAttributes = {
+					9E9800BF23F89AA900648331 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 9E9800BB23F89AA900648331 /* Build configuration list for PBXProject "Augmented-Reality-Practice" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E9800B723F89AA900648331;
+			productRefGroup = 9E9800C123F89AA900648331 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E9800BF23F89AA900648331 /* Augmented-Reality-Practice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E9800BE23F89AA900648331 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9800C623F89AA900648331 /* art.scnassets in Resources */,
+				9E9800D023F89AAC00648331 /* LaunchScreen.storyboard in Resources */,
+				9E9800CD23F89AAC00648331 /* Assets.xcassets in Resources */,
+				9E6F487B24AE583A0038A6B5 /* toy_drummer.usdz in Resources */,
+				9EB0BAC3240F36F3003693A4 /* car.dae in Resources */,
+				9EB0BAB9240747D1003693A4 /* haunter.dae in Resources */,
+				9E9800CB23F89AAA00648331 /* Main.storyboard in Resources */,
+				9E160D8424217F4600B341CF /* table.dae in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		705D7AA554B0E5903AE334CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Augmented-Reality-Practice/Pods-Augmented-Reality-Practice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Augmented-Reality-Practice/Pods-Augmented-Reality-Practice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Augmented-Reality-Practice/Pods-Augmented-Reality-Practice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F033BC379828C6BDFF45F934 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Augmented-Reality-Practice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E9800BC23F89AA900648331 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E5A26F8242427F600409343 /* PersistenceViewController.swift in Sources */,
+				9E6B23E12443559300132910 /* PracticePlaneDetection.swift in Sources */,
+				9E160D802421569C00B341CF /* ScalableObjectsViewController.swift in Sources */,
+				9ED11320243665AF0051565D /* PlanetDetectViewController.swift in Sources */,
+				9E9800C823F89AAA00648331 /* PlaceVirtualObjectsViewController.swift in Sources */,
+				9E6B23E324435DEB00132910 /* ARPlane.swift in Sources */,
+				9E6F487924AE4D5E0038A6B5 /* ARViewController.swift in Sources */,
+				9EB0BAE724126EF8003693A4 /* GameButton.swift in Sources */,
+				9E7530BB23FA155800B1D6AA /* MeasurementViewController.swift in Sources */,
+				9EB0BAC1240F35D2003693A4 /* RemoteCarViewController.swift in Sources */,
+				9EB0BABB240747EC003693A4 /* GoogleBlocksViewController.swift in Sources */,
+				9EB0BAEA24127379003693A4 /* PlaneDetectionViewController.swift in Sources */,
+				9ED11322243666C60051565D /* Planet.rcproject in Sources */,
+				9E9800D823F8A5D100648331 /* OverlayPlane.swift in Sources */,
+				9E7530B623F99E3800B1D6AA /* TargetAppViewController.swift in Sources */,
+				9E9800C423F89AA900648331 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9E9800C923F89AAA00648331 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E9800CA23F89AAA00648331 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E9800CE23F89AAC00648331 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E9800CF23F89AAC00648331 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E9800D223F89AAC00648331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9E9800D323F89AAC00648331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E9800D523F89AAC00648331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A38584FA092EC2135F713569 /* Pods-Augmented-Reality-Practice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7U54B96T9;
+				INFOPLIST_FILE = "Augmented-Reality-Practice/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sbrundage.Augmented-Reality-Practice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E9800D623F89AAC00648331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C2CE687D5041077CD36A0F3 /* Pods-Augmented-Reality-Practice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7U54B96T9;
+				INFOPLIST_FILE = "Augmented-Reality-Practice/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sbrundage.Augmented-Reality-Practice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E9800BB23F89AA900648331 /* Build configuration list for PBXProject "Augmented-Reality-Practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E9800D223F89AAC00648331 /* Debug */,
+				9E9800D323F89AAC00648331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E9800D423F89AAC00648331 /* Build configuration list for PBXNativeTarget "Augmented-Reality-Practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E9800D523F89AAC00648331 /* Debug */,
+				9E9800D623F89AAC00648331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E9800B823F89AA900648331 /* Project object */;
+}

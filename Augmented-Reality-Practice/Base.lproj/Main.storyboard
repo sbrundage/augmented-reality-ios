@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xvz-7s-zw9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Target App View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="TargetAppViewController" customModule="Augmented_Reality_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </arscnView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="YfH-im-ZGF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="139"/>
+        </scene>
+        <!--Measurement View Controller-->
+        <scene sceneID="7xI-iV-PtF">
+            <objects>
+                <viewController id="XZf-3Y-zY6" customClass="MeasurementViewController" customModule="Augmented_Reality_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oy5-Lc-IBu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bRS-5h-5Xv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ob1-aj-VSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="139"/>
+        </scene>
+        <!--Persistence View Controller-->
+        <scene sceneID="b8x-BR-gUC">
+            <objects>
+                <viewController id="qIq-aa-IEo" customClass="PersistenceViewController" customModule="Augmented_Reality_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hzj-H8-wvd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="CUt-XX-Mev"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nkv-7q-peI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804" y="139"/>
+        </scene>
+        <!--ARView-->
+        <scene sceneID="7kQ-3Z-Un1">
+            <objects>
+                <viewController id="SFK-Io-pY3" userLabel="ARView" customClass="PlanetDetectViewController" customModule="Augmented_Reality_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pDP-gb-VHj" userLabel="ARView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tEY-Em-4xA" userLabel="ARView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </arView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35T-E2-rT9">
+                                <rect key="frame" x="364" y="44" width="30" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Info">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="infoButtonTapped:" destination="SFK-Io-pY3" eventType="touchUpInside" id="q1B-d8-0Yb"/>
+                                </connections>
+                            </button>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQe-x9-YeP">
+                                <rect key="frame" x="0.0" y="796" width="414" height="100"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rjN-ya-2EX" userLabel="InfoView">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test to see how this text is displayed. Test to see how this text is displayed. Test to see how this text is displayed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aah-Jc-Jdx">
+                                            <rect key="frame" x="15" y="10" width="384" height="61"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Aah-Jc-Jdx" firstAttribute="leading" relation="lessThanOrEqual" secondItem="rjN-ya-2EX" secondAttribute="leading" constant="15" id="FLu-G8-Ek7"/>
+                                        <constraint firstItem="Aah-Jc-Jdx" firstAttribute="top" secondItem="rjN-ya-2EX" secondAttribute="top" constant="10" id="Wsf-te-loa"/>
+                                        <constraint firstItem="Aah-Jc-Jdx" firstAttribute="centerX" secondItem="rjN-ya-2EX" secondAttribute="centerX" id="oKM-nh-Clb"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Aah-Jc-Jdx" secondAttribute="trailing" constant="15" id="oNV-tr-cMO"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="pbv-oB-eY0"/>
+                                </constraints>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rgo-vT-qIO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tEY-Em-4xA" firstAttribute="leading" secondItem="Rgo-vT-qIO" secondAttribute="leading" id="122-oe-Y9x"/>
+                            <constraint firstItem="QQe-x9-YeP" firstAttribute="bottom" secondItem="tEY-Em-4xA" secondAttribute="bottom" id="1bX-NW-exx"/>
+                            <constraint firstItem="QQe-x9-YeP" firstAttribute="centerX" secondItem="Rgo-vT-qIO" secondAttribute="centerX" id="5Xa-kF-eYE"/>
+                            <constraint firstItem="Rgo-vT-qIO" firstAttribute="trailing" secondItem="35T-E2-rT9" secondAttribute="trailing" constant="20" id="79V-tu-Cb2"/>
+                            <constraint firstItem="35T-E2-rT9" firstAttribute="top" secondItem="Rgo-vT-qIO" secondAttribute="top" id="Hdp-Rh-wPN"/>
+                            <constraint firstAttribute="bottom" secondItem="tEY-Em-4xA" secondAttribute="bottom" id="Wgf-5P-cfB"/>
+                            <constraint firstItem="Rgo-vT-qIO" firstAttribute="trailing" secondItem="tEY-Em-4xA" secondAttribute="trailing" id="ecr-f2-f2R"/>
+                            <constraint firstItem="tEY-Em-4xA" firstAttribute="top" secondItem="Rgo-vT-qIO" secondAttribute="top" id="liJ-cs-0da"/>
+                            <constraint firstItem="Rgo-vT-qIO" firstAttribute="trailing" secondItem="QQe-x9-YeP" secondAttribute="trailing" id="nxn-9y-baC"/>
+                            <constraint firstItem="QQe-x9-YeP" firstAttribute="leading" secondItem="Rgo-vT-qIO" secondAttribute="leading" id="xbo-eG-HdM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="tEY-Em-4xA" id="b4D-Gs-3wS"/>
+                        <outlet property="infoLabel" destination="Aah-Jc-Jdx" id="VdS-tX-kJS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zhb-WM-yPb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3455" y="139"/>
+        </scene>
+        <!--Practice Plane Detection-->
+        <scene sceneID="4Rr-15-isG">
+            <objects>
+                <viewController id="NZK-PW-ZXG" customClass="PracticePlaneDetection" customModule="Augmented_Reality_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JW3-CC-uaa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="X8E-5T-6yN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ULH-jG-jOc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2584" y="139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Z9T-Hb-DpY">
+            <objects>
+                <viewController id="xvz-7s-zw9" customClass="ARViewController" customModule="Augmented_Reality_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3D7-ej-Iey">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsT-zR-ipc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </arView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fx6-ob-4Yg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fx6-ob-4Yg" firstAttribute="bottom" secondItem="hsT-zR-ipc" secondAttribute="bottom" id="Upa-lM-UgP"/>
+                            <constraint firstItem="Fx6-ob-4Yg" firstAttribute="trailing" secondItem="hsT-zR-ipc" secondAttribute="trailing" id="lPx-j9-mjR"/>
+                            <constraint firstItem="hsT-zR-ipc" firstAttribute="top" secondItem="Fx6-ob-4Yg" secondAttribute="top" id="sp3-6V-uxp"/>
+                            <constraint firstItem="hsT-zR-ipc" firstAttribute="leading" secondItem="Fx6-ob-4Yg" secondAttribute="leading" id="v9E-9G-9hr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="hsT-zR-ipc" id="zqh-zM-nKb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9m9-Bo-83U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4243" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
